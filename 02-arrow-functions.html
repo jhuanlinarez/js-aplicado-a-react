@@ -12,8 +12,15 @@
 
 
 
-    //1ª Digitação (aqui) 
+    // Função sintaxe tradicional
+    function nomeDaFuncao(){
+      exibirNaTela('Função de sintaxe tradicional...');
+    }
 
+    // Função anônima
+    var outraFuncao = function(){
+      exibirNaTela('Outra forma de declarar função...');
+    }
 
 
     // Chamada da função
@@ -28,8 +35,11 @@
 
 
 
-    //2ª Digitação (aqui) 
+    function exercicio (valor1,valor2) { 
+      return valor1 - valor2;
+    }
 
+    let resultado = exercicio(10,3)
 
 
     exibirNaTela(resultado);
@@ -66,9 +76,11 @@
     - Monte uma arrow function que receba um nome de pessoa e a converta para letras maiúsculas.
     - Chame a função 3x (passando nomes diferentes) e exibindo no console e tela os resultados */
 
-    
+    let converterMaiuscula = nome => nome.toUpperCase();
 
-    //3ª Digitação (aqui) 
+  exibirNaTela(converterMaiuscula('Ignacio'));
+  exibirNaTela(converterMaiuscula('Gisele'));
+  exibirNaTela(converterMaiuscula('Linda'));
 
 
 

@@ -12,7 +12,26 @@
 
 
 
-    //1ª Digitação (aqui) 
+    class Pessoa{
+      // propriedades
+      nome = 'sem nome';
+      genero = 'não informado';
+      idade;
+    
+
+    // métodos
+    mostraGenero(){
+      exibirNaTela(this.genero);
+    }
+
+    mostraNome(){
+      exibirNaTela(this.nome);
+    }
+
+    verificaIdade(){
+      return this.idade >=18 ? 'é maior' : 'é menor';
+    }
+  }
 
 
 
@@ -37,8 +56,18 @@
 
 
 
-    //2ª Digitação (aqui) 
+let umaPessoa = new Pessoa;
+umaPessoa.nome = 'Chico Perez';
+umaPessoa.genero = 'masculino';
+umaPessoa.idade = 30;
 
+exibirNaTela(umaPessoa);
+
+let outraPessoa = new Pessoa;
+outraPessoa.nome = 'Maria';
+outraPessoa.idade = 25;
+
+exibirNaTela(outraPessoa);
 
 
 
@@ -47,9 +76,16 @@
 
 
 
-     //3ª Digitação (aqui) 
-
-
+    let aluno = new Aluno;
+    aluno.nome = 'Vitória';
+    aluno.genero = 'feminino';
+    aluno.matricula = '123abc';
+    aluno.curso = 'JS para React';
+    aluno.idade = 25;
+    
+    exibirNaTela(aluno.nome);
+    exibirNaTela(aluno.idade);
+    exibirNaTela(aluno.verificaIdade());
 
 
     // Console.log(aluno)
